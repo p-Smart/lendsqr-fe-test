@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Logo from "@/components/Logo";
+import Logo from "@/components/Logo/Logo";
 import style from "./Auth.module.scss";
 import { FC, PropsWithChildren, useEffect } from "react";
 

@@ -1,7 +1,7 @@
 import style from "./Dashboard.module.scss";
 import { FC, PropsWithChildren } from "react";
-import Topbar from "./Topbar";
-import Sidebar from "./Sidebar";
+import Topbar from "./Topbar/Topbar";
+import Sidebar from "./Sidebar/Sidebar";
 
 interface IDashboardLayout {}
 

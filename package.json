@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"typed-scss-modules src --watch\"",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -21,11 +21,9 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "concurrently": "^9.1.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "sass": "^1.80.6",
-    "typed-scss-modules": "^8.0.1",
     "typescript": "^5"
   },
   "packageManager": "yarn@4.1.1"

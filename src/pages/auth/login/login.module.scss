@@ -1,6 +1,6 @@
-@use "../../../styles/mixins.scss" as mixins;
-@use "../../../styles/palette.scss" as palette;
-@use "../../../styles/breakpoints.scss" as breakpoints;
+@use "../../../styles/mixins.scss";
+@use "../../../styles/palette.scss";
+@use "../../../styles/breakpoints.scss";
 
 .container {
   @include mixins.stack;

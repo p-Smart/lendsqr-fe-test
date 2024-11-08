@@ -1,11 +1,11 @@
-import AuthLayout from "@/layouts/Auth";
+import AuthLayout from "@/layouts/Auth/Auth";
 import { NextPage } from "next";
 import style from "./login.module.scss";
-import InputField from "@/components/InputField";
+import InputField from "@/components/InputField/InputField";
 import { useState } from "react";
 import useSetObjectState from "@/hooks/useSetObjectState";
 import Link from "next/link";
-import Button from "@/components/Button";
+import Button from "@/components/Button/Button";
 
 const LoginPage: NextPage = () => {
   const initialLoginData = {

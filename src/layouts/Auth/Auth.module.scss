@@ -20,24 +20,23 @@
   }
 
   .flexbox {
-    @include mixins.flex {
-      gap: 50px;
-      @include mixins.my(auto);
-      justify-content: space-between;
-      img {
-        $w: 600px;
-        $h: 338px;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+    @include mixins.flex;
+    gap: 50px;
+    @include mixins.my(auto);
+    justify-content: space-between;
+    img {
+      $w: 600px;
+      $h: 338px;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     @include breakpoints.base {
-        flex-direction: column-reverse;
-      }
-      @include breakpoints.lg {
-        flex-direction: row;
-      }
+      flex-direction: column-reverse;
+    }
+    @include breakpoints.lg {
+      flex-direction: row;
+    }
   }
 }
