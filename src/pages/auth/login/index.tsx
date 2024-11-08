@@ -1,4 +1,4 @@
-import AuthLayout from "@/layouts/auth";
+import AuthLayout from "@/layouts/Auth";
 import { NextPage } from "next";
 import style from "./login.module.scss";
 import InputField from "@/components/InputField";
@@ -33,8 +33,10 @@ const LoginPage: NextPage = () => {
             onChange={(val) => setLoginDatum("password", val)}
             type="password"
           />
-          <Link href="/">FORGOT PASSWORD?</Link>
-          <Button>
+          <Link className={style.textBtn} href="/">
+            FORGOT PASSWORD?
+          </Link>
+          <Button as={Link} href="/dashboard">
             log in
           </Button>
         </div>

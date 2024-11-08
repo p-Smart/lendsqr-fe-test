@@ -1,5 +1,5 @@
-@use "../styles/palette.scss" as palette;
-@use "../styles/mixins.scss" as mixins;
+@use "../../styles/palette.scss" as palette;
+@use "../../styles/mixins.scss" as mixins;
 
 .button {
   color: white;
@@ -16,6 +16,7 @@
   justify-content: center;
   gap: 5px;
   font-weight: 600;
+  font-size: 0.9rem;
 
   &.full-width {
     width: 100%;

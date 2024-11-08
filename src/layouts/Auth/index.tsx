@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Logo from "@/components/Logo";
-import style from "./auth.module.scss";
+import style from "./Auth.module.scss";
 import { FC, PropsWithChildren, useEffect } from "react";
 
 const AuthLayout: FC<PropsWithChildren> = ({ children }) => {

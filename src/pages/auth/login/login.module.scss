@@ -1,6 +1,6 @@
-@use "../../styles/mixins.scss" as mixins;
-@use "../../styles/palette.scss" as palette;
-@use "../../styles/breakpoints.scss" as breakpoints;
+@use "../../../styles/mixins.scss" as mixins;
+@use "../../../styles/palette.scss" as palette;
+@use "../../../styles/breakpoints.scss" as breakpoints;
 
 .container {
   @include mixins.stack;
@@ -22,7 +22,7 @@
   h1 {
     color: palette.$secondary;
   }
-  a {
+  .textBtn {
     font-size: 0.8rem;
     color: palette.$primary;
     font-weight: 600;

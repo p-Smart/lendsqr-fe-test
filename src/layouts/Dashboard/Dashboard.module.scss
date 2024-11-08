@@ -1,0 +1,8 @@
+@use "../../styles/breakpoints.scss" as breakpoints;
+@use "../../styles/mixins.scss" as mixins;
+@use "../../styles/palette.scss" as palette;
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+}

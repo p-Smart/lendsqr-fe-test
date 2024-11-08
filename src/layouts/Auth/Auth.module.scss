@@ -1,5 +1,5 @@
-@use "../styles/breakpoints.scss" as breakpoints;
-@use "../styles/mixins.scss" as mixins;
+@use "../../styles/breakpoints.scss" as breakpoints;
+@use "../../styles/mixins.scss" as mixins;
 
 .container {
   @include mixins.stack;
