@@ -1,0 +1,19 @@
+@use "../styles//breakpoints.scss" as breakpoints;
+
+$w: 174px;
+$h: 36px;
+
+.img {
+  @include breakpoints.base {
+    width: calc($w/1.6);
+    height: calc($h/1.6);
+  }
+  @include breakpoints.md {
+    width: calc($w/1.4);
+    height: calc($h/1.4);
+  }
+  @include breakpoints.lg {
+    width: calc($w/1.2);
+    height: calc($h/1.2);
+  }
+}

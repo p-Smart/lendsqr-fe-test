@@ -1,5 +1,6 @@
+@use "./palette.scss" as palette;
 @import url("/assets/fonts/avenir-next/stylesheet.css");
-@import "./variables/colors.scss";
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +15,11 @@ a {
 html {
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
+  font-family: "Work Sans", serif;
+  color: palette.$text;
+  &.auth {
+    font-family: "Avenir Next LT Pro";
+  }
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +28,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $primary;
+  background-color: palette.$primary;
   border-radius: 2px;
 }
 

@@ -1,0 +1,47 @@
+@use "../styles/palette.scss" as palette;
+@use "../styles/mixins.scss" as mixins;
+
+.inputField {
+  position: relative;
+  width: 100%;
+
+  button {
+    font-size: 0.8rem;
+    color: palette.$primary;
+    font-weight: 600;
+  }
+}
+
+.input {
+  width: 100%;
+  @include mixins.py(12px);
+  @include mixins.px(15px);
+  font-size: 14px;
+  border: 1px solid rgba(84, 95, 125, 0.15);
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  &::placeholder {
+    font-size: 14px;
+    color: palette.$text;
+    opacity: 60%;
+  }
+
+  &:focus {
+    border-color: palette.$primary;
+  }
+}
+
+.toggleVisibility {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #545f7d;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
